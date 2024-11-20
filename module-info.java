@@ -3,10 +3,11 @@ module TodoApp {
     requires spring.beans;
     requires java.sql;
 
+
     opens todoapp;
     opens todoapp.entities;
     opens todoapp.repositories;
     opens todoapp.services;
     opens todoapp.views;
-    opens todoapp.confiq;
+    opens todoapp.config;
 }
