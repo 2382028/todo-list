@@ -1,9 +1,11 @@
-package views;
+package todoapp.views;
 
-import entities.TodoList;
+import todoapp.entities.TodoList;
 import java.util.Scanner;
-import services.TodoListService;
+import todoapp.services.TodoListService;
+import org.springframework.stereotype.Component;
 
+@Component
 public class TodoListTerminalViewImpl implements TodoListView {
     public static Scanner scanner = new Scanner(System.in);
     private final TodoListService todoListService;
